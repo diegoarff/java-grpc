@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+#containerA {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+#handler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(61, 61, 61);
+  padding: 10px;
+  border: 2px solid rgb(153, 153, 153);
+  border-radius: 10px;
+}
+#OPT {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+#Create {
+  background-color: #272868;
+  color: #796fff;
+  border: #796fff 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+#Read {
+  background-color: #682727;
+  color: #ff6f6f;
+  border: #ff6f6f 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+#Update {
+  background-color: #276830;
+  color: #87ff6f;
+  border: #87ff6f 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+#Delete {
+  background-color: #685e27;
+  color: #ffd96f;
+  border: #ffd96f 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+#containerB {
+  margin-top: 20px;
+  height: 500px;
+  overflow-y: auto;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#containerB::-webkit-scrollbar {
+  display: none;
+}
+
+input {
+  margin: 5px;
+  border-radius: 20px;
+  width: 90%;
+  padding: 8px;
+  border: 2px solid rgb(153, 153, 153);
+}
+
+#containerB {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+}
+
+thead {
+  background-color: #333;
+}
+
+th,
+td {
+  border: 1px solid #444;
+  padding: 5px;
+  color: #fff;
+}
+
+th {
+  background-color: #555;
+  text-align: left;
+}
+
+tbody {
+  background-color: #222;
+}
+
+tr:hover {
+  background-color: #333;
+}

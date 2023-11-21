@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option java_multiple_files = true; 
+option java_package = "com.uru.grpc"; 
+option java_outer_classname = "ProductsProto";
+
+package com.uru.grpc;
+
+service Products {
+  rpc getAllProducts (Empty) returns (stream Product);
+  rpc getProduct (IdRequest) returns (Product);
+  rpc addProduct (AddRequest) returns (Empty);
+  rpc updateProduct (Product) returns (Empty);
+  rpc deleteProduct (IdRequest) returns (Empty);
+}
+
+message Empty {
+}
+
+message IdRequest {
+  int32 id = 1;
+}
+
+message AddRequest {
+  string descripcion = 1;
+}
+
+message Product{
+  int32 id = 1;
+  string descripcion = 2;
+}

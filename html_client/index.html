@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CRUD</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="containerA">
+      <form id="handler">
+        <input type="text" placeholder="id" id="ID" />
+        <input type="text" placeholder="descripcion" id="DESC" />
+      </form>
+      <div id="OPT">
+        <button id="Create">Create</button>
+        <button id="Read">Read</button>
+        <button id="Update">Update</button>
+        <button id="Delete">Delete</button>
+      </div>
+    </div>
+    <div id="containerB">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Descripcion</th>
+          </tr>
+        </thead>
+        <tbody id="myTable"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
