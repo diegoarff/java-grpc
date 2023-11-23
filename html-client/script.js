@@ -98,7 +98,9 @@ document.getElementById("Create").addEventListener("click", () => {
   const descripcion = descInput.value;
   cleanInputs();
   addItem(descripcion);
-  refresh();
+  setTimeout(() => {
+    refresh();
+  }, 100);
 });
 
 document.getElementById("Delete").addEventListener("click", () => {
@@ -106,7 +108,9 @@ document.getElementById("Delete").addEventListener("click", () => {
   const id = idInput.value;
   cleanInputs();
   deleteItem(id);
-  refresh();
+  setTimeout(() => {
+    refresh();
+  }, 100);
 });
 
 document.getElementById("Update").addEventListener("click", () => {
@@ -115,5 +119,7 @@ document.getElementById("Update").addEventListener("click", () => {
   const descripcion = descInput.value;
   cleanInputs();
   updateItem(id, descripcion);
-  refresh();
+  setTimeout(() => {
+    refresh();
+  }, 100);
 });
